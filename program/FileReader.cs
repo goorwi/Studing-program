@@ -28,7 +28,7 @@ namespace program
         }
         private void Init()
         {
-            string path = Directory.GetCurrentDirectory();
+            string path = Directory.GetCurrentDirectory() + @"\Import";
             switch (tp)
             {
                 case tabPanel.start:
@@ -48,7 +48,7 @@ namespace program
                     }
                 case tabPanel.integration:
                     {
-                        path += @"\integration.rtf";
+                        path += @"\integr.rtf";
                         break;
                     }
                 case tabPanel.prepare:
@@ -59,6 +59,16 @@ namespace program
                 case tabPanel.unitTesting:
                     {
                         path += @"\unit-testing.rtf";
+                        break;
+                    }
+                case tabPanel.integrTesting:
+                    {
+                        path += @"\integr-testing.rtf";
+                        break;
+                    }
+                case tabPanel.task:
+                    {
+                        path += @"\task.rtf";
                         break;
                     }
                 case tabPanel.end:

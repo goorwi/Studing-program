@@ -5,20 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:program"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800" WindowStartupLocation="CenterScreen"
+        Title="Тестирование приложения с базой данных" Height="600" Width="800" WindowStartupLocation="CenterScreen"
         Loaded="Window_Loaded">
     <UniformGrid>
         <TabControl>
             <TabItem Header="Руководство">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtIntro" IsReadOnly="True"/>
                     </ScrollViewer>
@@ -26,14 +18,6 @@
             </TabItem>
             <TabItem Header="Тестирование">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtTesting" IsReadOnly="True"/>
                     </ScrollViewer>
@@ -41,14 +25,6 @@
             </TabItem>
             <TabItem Header="Модульное тестирование">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtUnit" IsReadOnly="True"/>
                     </ScrollViewer>
@@ -56,14 +32,6 @@
             </TabItem>
             <TabItem Header="Интеграционное тестирование">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtIntegration" IsReadOnly="True"/>
                     </ScrollViewer>
@@ -71,14 +39,6 @@
             </TabItem>
             <TabItem Header="Подготовка">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtPrepare" IsReadOnly="True"/>
                     </ScrollViewer>
@@ -86,29 +46,27 @@
             </TabItem>
             <TabItem Header="Unit-тесты">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtUnitTesting" IsReadOnly="True"/>
                     </ScrollViewer>
                 </Grid>
             </TabItem>
+            <TabItem Header="Интеграционные тесты">
+                <Grid Background="#FFE5E5E5">
+                    <ScrollViewer Grid.Row="1">
+                        <RichTextBox x:Name="txtIntegrTesting" IsReadOnly="True"/>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Задание">
+                <Grid Background="#FFE5E5E5">
+                    <ScrollViewer Grid.Row="1">
+                        <RichTextBox x:Name="txtTask" IsReadOnly="True"/>
+                    </ScrollViewer>
+                </Grid>
+            </TabItem>
             <TabItem Header="Заключение">
                 <Grid Background="#FFE5E5E5">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="30"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                    <Menu Grid.Row="0">
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                        <Button VerticalAlignment="Center" HorizontalAlignment="Left" Content=""/>
-                    </Menu>
                     <ScrollViewer Grid.Row="1">
                         <RichTextBox x:Name="txtEnd" IsReadOnly="True"/>
                     </ScrollViewer>

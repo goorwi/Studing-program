@@ -24,6 +24,8 @@ namespace program
         integration,
         prepare,
         unitTesting,
+        integrTesting,
+        task,
         end
     };
     /// <summary>
@@ -45,6 +47,9 @@ namespace program
             FileReader frIntegraion = new FileReader(txtIntegration, tabPanel.integration);
             FileReader frPrepare = new FileReader(txtPrepare, tabPanel.prepare);
             FileReader frUnitTesting = new FileReader(txtUnitTesting, tabPanel.unitTesting);
+            FileReader frIntegrTesting = new FileReader(txtIntegrTesting, tabPanel.integrTesting);
+            FileReader frTask = new FileReader(txtTask, tabPanel.task);
+            FileReader frEnd = new FileReader(txtEnd, tabPanel.end);
         }
     }
 }
